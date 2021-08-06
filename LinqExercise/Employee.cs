@@ -6,6 +6,8 @@ namespace LinqExercise
 {
     internal class Employee
     {
+        private string v;
+
         public int Age { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -29,6 +31,11 @@ namespace LinqExercise
         public Employee()
         {
             
+        }
+
+        public Employee(string v)
+        {
+            this.v = v;
         }
     }
 }
